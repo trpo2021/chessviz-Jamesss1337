@@ -1,10 +1,10 @@
-all: chessvizz
+all: chessviz
 
-chessviz: chessviz.o
-	gcc chessviz.o -o chessvizz
+chessviz: main.o
+	gcc main.o -o chessviz
 
-chessviz.o: chessviz.c
-	gcc -Wall -Werror -c chessviz.c
+main.o: main.cpp
+	gcc -Wall -Werror -c main.cpp
 
 clean:
-	rm -rf *.o chessvizz
+	rm -rf *.o chessviz
