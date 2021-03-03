@@ -1,10 +1,7 @@
-all: chessviz
-
-chessviz: main.o
-	g++ main.o -o chessviz
-
-main.o: main.cpp
-	g++ -Wall -Werror -c main.cpp
+CFLANG= -Wall -Werror
+all:chessvz
+chessvz: main.cpp
+	g++ $(CFLANG) main.cpp
 
 clean:
-	rm -rf *.o chessviz
+	rm -rf *.o chessvz
