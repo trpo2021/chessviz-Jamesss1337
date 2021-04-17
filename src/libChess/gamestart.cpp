@@ -1,8 +1,6 @@
 #include "gamestart.h"
-#include "deletefigura.h"
 #include "doska_def.h"
 #include "doska_hod.h"
-#include "print.h"
 #include <iostream>
 #include <string>
 using namespace std;
