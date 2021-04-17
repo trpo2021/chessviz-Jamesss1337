@@ -1,6 +1,8 @@
+#include "doska_hod.h"
+#include "deletefigura.h"
+#include "print.h"
 #include <iostream>
 #include <string>
-#include "doska_hod.h"
 using namespace std;
 
 void doska_hod(int x, int y)
