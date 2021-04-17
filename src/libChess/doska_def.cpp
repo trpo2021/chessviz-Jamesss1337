@@ -1,3 +1,4 @@
+#include "doska_def.h"
 #include <iostream>
 #include <string>
 using namespace std;
