@@ -5,23 +5,6 @@
 #include <string>
 using namespace std;
 
-string buff;
-
-bool flag_buff = false;
-
-string DOSKA[9][9];
-
-bool gde[9][9];
-
-int hod = 0;
-
-struct Figura {
-    string Pw, Pb;
-    Figura() : Pw{"Pw"}, Pb{"Pb"}
-    {
-    }
-};
-
 void gamestart()
 {
     setlocale(0, "Russian");
