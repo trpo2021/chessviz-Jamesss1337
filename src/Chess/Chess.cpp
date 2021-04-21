@@ -1,6 +1,6 @@
-#include "libChess/gamestart.h"
 #include <iostream>
 #include <string>
+#include "libChess/gamestart.h"
 using namespace std;
 
 int main()
