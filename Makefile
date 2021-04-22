@@ -7,7 +7,7 @@ SRC_CHESS = src/Chess/
 SRC_LIBCHESS = src/libChess/
 .PHONY: Chess.exe
 
-chess.exe: $(OBJ_SRC_CHESS)Chess.o $(OBJ_SRC_LIBCHESS)libChess.a
+Chess.exe: $(OBJ_SRC_CHESS)Chess.o $(OBJ_SRC_LIBCHESS)libChess.a
 	g++ $(CFLAGS) -o $@ $^
 
 $(OBJ_SRC_CHESS)Chess.o: $(SRC_CHESS)Chess.cpp
