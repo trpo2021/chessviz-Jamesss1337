@@ -6,7 +6,6 @@ using namespace std;
 
 void doska_def()
 {
-    Figura f;
     for (int i = 0; i < 8; i++) {
         for (int j = 1; j < 9; j++) {
             DOSKA[i][j] = " __ ";
@@ -15,8 +14,8 @@ void doska_def()
     }
 
     for (int i = 1; i < 9; i++) {
-        DOSKA[1][i] = " " + f.Pb + " ";
-        DOSKA[6][i] = " " + f.Pw + " ";
+        DOSKA[1][i] = " Pb ";
+        DOSKA[6][i] = " Pw ";
         gde[1][i] = 1;
         gde[6][i] = 1;
     }
