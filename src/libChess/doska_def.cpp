@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-void doska_def()
+void doska_def(string**DOSKA)
 {
     for (int i = 0; i < 8; i++) {
         for (int j = 1; j < 9; j++) {
@@ -37,5 +37,5 @@ void doska_def()
     DOSKA[7][4] = " Qw ";
     DOSKA[7][5] = " Kw ";
 
-    print();
+    print(DOSKA);
 }
