@@ -1,9 +1,8 @@
 #include "print.h"
 #include <iostream>
 #include <string>
-using namespace std;
 
-void print()
+void print(string**DOSKA)
 {
     char num = 'a';
 
