@@ -5,12 +5,12 @@
 #include <string>
 using namespace std;
 
-void doska_hod(int x, int y)
+void doska_hod(string**DOSKA,int x, int y)
 {
     if (gde[8 - y][8 - (104 - x)] == 1) {
         buff = DOSKA[8 - y][8 - (104 - x)];
 
-        deletefigura(x, y);
+        deletefigura(DOSKA,x, y);
 
         gde[8 - y][8 - (104 - x)] = 0;
         flag_buff = true;
@@ -22,7 +22,7 @@ void doska_hod(int x, int y)
         buff = "";
         flag_buff = false;
 
-        print();
+        print(DOSKA);
     }
 
     ++hod;
