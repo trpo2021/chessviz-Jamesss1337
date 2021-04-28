@@ -11,6 +11,7 @@ void gamestart()
     doska_def();
     int kuda = 0;
     char otkuda = 0;
+    
     while (cin >> otkuda >> kuda) {
         doska_hod(otkuda, kuda);
     }
