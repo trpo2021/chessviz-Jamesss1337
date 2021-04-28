@@ -2,4 +2,4 @@
 #include <iostream>
 #include <string>
 
-void deletefigura(int x, int y);
+void deletefigura(std::string**DOSKA,int x, int y);
