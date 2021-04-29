@@ -4,8 +4,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
-void doska_hod(string**DOSKA,int x, int y)
+bool gde[9][9];
+bool flag_buff = false;
+void doska_hod(string buff,string**DOSKA,int x, int y)
 {
     if (gde[8 - y][8 - (104 - x)] == 1) {
         buff = DOSKA[8 - y][8 - (104 - x)];
@@ -24,6 +25,4 @@ void doska_hod(string**DOSKA,int x, int y)
 
         print(DOSKA);
     }
-
-    ++hod;
 }
