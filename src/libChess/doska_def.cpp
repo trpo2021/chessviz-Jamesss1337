@@ -6,6 +6,7 @@ using namespace std;
 
 void doska_def(string**DOSKA)
 {
+bool gde[9][9];
     for (int i = 0; i < 8; i++) {
         for (int j = 1; j < 9; j++) {
             DOSKA[i][j] = " __ ";
