@@ -23,7 +23,7 @@ $(SRC_LIBCHESS)Chess.o: $(SRC_LIBCHESS)Chess.cpp
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 $(OBJ_SRC_LIBCHESS)deletefigura.o: $(SRC_LIBCHESS)deletefigura.cpp
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CC) -c $(CLAGS) -o $@ $<
 	
 $(OBJ_SRC_LIBCHESS)doska_def.o: $(SRC_LIBCHESS)doska_def.cpp
 	$(CC) -c $(CFLAGS) -o $@ $<
