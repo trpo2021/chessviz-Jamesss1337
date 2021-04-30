@@ -2,4 +2,4 @@
 #include <iostream>
 #include <string>
 
-void print(std::string**DOSKA);
+void print(std::string** DOSKA);
