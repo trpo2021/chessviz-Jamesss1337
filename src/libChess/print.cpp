@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-void print(string**DOSKA)
+void print(string** DOSKA)
 {
     for (int i = 0; i < 8; i++) {
         cout << "\t\t\t" << 8 - i;
@@ -13,6 +13,5 @@ void print(string**DOSKA)
     }
     cout << "\t\t\t";
 
-        cout << endl << "STEP: ";
-    
+    cout << endl << "STEP: ";
 }
