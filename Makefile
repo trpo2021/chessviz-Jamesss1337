@@ -1,5 +1,5 @@
-CFLAGS= -Wall -Werror -I src
-CC = g++
+CXXFLAGS= -Wall -Werror -I src
+CXX = g++
 
 OBJ_SRC_CHESS = obj/src/Chess/
 OBJ_SRC_LIBCHESS = obj/src/libChess/
@@ -10,37 +10,41 @@ SRC_LIBCHESS = src/libChess/
 .PHONY: Chess.exe
 
 Chess.exe: $(OBJ_SRC_CHESS)Chess.o $(OBJ_SRC_LIBCHESS)libChess.a
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CXX) $(CXXFLAGS) -o $@ $^
 
 $(OBJ_SRC_CHESS)Chess.o: $(SRC_CHESS)Chess.cpp
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CXX) -c $(CXXFLAGS) -o $@ $<
 	
 $(OBJ_SRC_LIBCHESS)libChess.a: $(SRC_LIBCHESS)deletefigura.o $(SRC_LIBCHESS)doska_def.o $(SRC_LIBCHESS)doska_hod.o $(SRC_LIBCHESS)gamestart.o $(SRC_LIBCHESS)print.o
 	ar rcs $@ $^
 
 
 $(SRC_LIBCHESS)Chess.o: $(SRC_LIBCHESS)Chess.cpp
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CXX) -c $(CXXFLAGS) -o $@ $<
 
 $(OBJ_SRC_LIBCHESS)deletefigura.o: $(SRC_LIBCHESS)deletefigura.cpp
-	$(CC) -c $(CLAGS) -o $@ $<
+	$(CXX) -c $(CXXLAGS) -o $@ $<
 	
 $(OBJ_SRC_LIBCHESS)doska_def.o: $(SRC_LIBCHESS)doska_def.cpp
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CXX) -c $(CXXFLAGS) -o $@ $<
 
 $(OBJ_SRC_LIBCHESS)gamestart.o: $(SRC_LIBCHESS)gamestart.cpp
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CXX) -c $(CXXFLAGS) -o $@ $<
 	
 $(OBJ_SRC_LIBCHESS)doska_hod.o: $(SRC_LIBCHESS)doska_hod.cpp
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CXX) -c $(CXXFLAGS) -o $@ $<
 	
 $(OBJ_SRC_LIBCHESS)print.o: $(SRC_LIBCHESS)print.cpp
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CXX) -c $(CXXFLAGS) -o $@ $<
 
 .PHONY: clean
 
 clean:
 	rm $(OBJ_SRC_LIBCHESS)*.o Chess
+	rm $(CHESSVIZ_OBJ)*.o
+	rm $(LIBCHESSVIZ_OBJ)*.o
+	rm $(LIBCHESSVIZ_OBJ)*.a
+	rm $(CHESSVIZ_BIN)*.exe
 
 -include deletefigura.d doska_def.d doska_hod.d
 -include gamestart.d print.d
