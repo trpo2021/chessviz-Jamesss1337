@@ -40,11 +40,10 @@ $(OBJ_SRC_LIBCHESS)print.o: $(SRC_LIBCHESS)print.cpp
 .PHONY: clean
 
 clean:
-	rm $(OBJ_SRC_LIBCHESS)*.o Chess
-	rm $(CHESSVIZ_OBJ)*.o
-	rm $(LIBCHESSVIZ_OBJ)*.o
-	rm $(LIBCHESSVIZ_OBJ)*.a
-	rm $(CHESSVIZ_BIN)*.exe
+	rm $(OBJ_SRC_CHESS)*.o
+	rm $(OBJ_SRC_LIBCHESS)*.o
+	rm $(OBJ_SRC_LIBCHESS)*.a
+	rm $(SRC_LIBCHESS)*.o
 
 -include deletefigura.d doska_def.d doska_hod.d
 -include gamestart.d print.d
