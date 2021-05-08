@@ -4,3 +4,4 @@ Makefile~
 *.out
 *.exe
 libChess.a
+*.a
