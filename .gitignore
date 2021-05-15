@@ -1,0 +1,7 @@
+*.o
+chessviz
+Makefile~
+*.out
+*.exe
+libChess.a
+*.a
